@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-23T16:14:51.046Z",
+    "end": "2025-07-23T16:14:54.115Z",
+    "duration": 3069,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ed120f07-7dca-4444-a5fb-d036d092d10f",
+      "title": "",
+      "fullFile": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "file": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7c3bef9-a21d-4462-b846-9cf6d0e87542",
+          "title": "Garage and Fuel Expenses",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add car and fuel expense",
+              "fullTitle": "Garage and Fuel Expenses should add car and fuel expense",
+              "timedOut": null,
+              "duration": 3062,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('button', 'Add car').click();\n_garagePage.garagePage.addCar('Audi', 'TT', '12345');\n//expensesPage.addExpenses('50', '100');",
+              "err": {
+                "message": "CypressError: `cy.click()` cannot be called on a `<select>` element. Use `cy.select()` command instead to change the value.\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: `cy.click()` cannot be called on a `<select>` element. Use `cy.select()` command instead to change the value.\n\nhttps://on.cypress.io/select\n    at perform (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:114031:70)\n    at tryCatcher (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:1777:23)\n    at Object.gotValue (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:6446:18)\n    at Object.gotAccum (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:6435:25)\n    at Object.tryCatcher (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromiseCtx (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:1583:10)\n    at _drainQueueStep (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:2381:12)\n    at _drainQueue (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Object.proxyGetter [as get] (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:80297:22)\n    at exists (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:146387:26)\n    at elExists (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:146402:10)\n    at ensureExistence (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:146583:22)\n    at onFailFn (https://qauto.forstudy.space/__cypress/runner/cypress_runner.js:146612:53)",
+                "diff": null
+              },
+              "uuid": "c27acaa7-c551-462e-a966-57b806d88db3",
+              "parentUUID": "e7c3bef9-a21d-4462-b846-9cf6d0e87542",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c27acaa7-c551-462e-a966-57b806d88db3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3062,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
