@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-23T15:26:50.728Z",
+    "end": "2025-07-23T15:26:55.655Z",
+    "duration": 4927,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b6c3fd36-36cc-4804-82ee-e00f66bf4178",
+      "title": "",
+      "fullFile": "cypress/e2e/lesson19/registrationPositiveCase.cy.js",
+      "file": "cypress/e2e/lesson19/registrationPositiveCase.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "should register and login successfully",
+          "fullTitle": "should register and login successfully",
+          "timedOut": null,
+          "duration": 4884,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const uniqueEmail = `test+${Date.now()}@test.com`;\nconst password = 'Password123';\ncy.wrap(uniqueEmail).as('userEmail');\ncy.wrap(password).as('userPassword');\ncy.visit('https://qauto.forstudy.space/', {\n  auth: {\n    username: 'guest',\n    password: 'welcome2qauto'\n  }\n});\ncy.contains('Sign up', {\n  timeout: 10000\n}).should('be.visible').click();\ncy.get('#signupName').type('John');\ncy.get('#signupLastName').type('Doe');\ncy.get('#signupEmail').type(uniqueEmail);\ncy.get('#signupPassword').type(password);\ncy.get('#signupRepeatPassword').type(password);\ncy.contains('button', 'Register').should('be.enabled').click();\n// Обов'язково розлогінитись\ncy.contains('Log out').should('be.visible').click();\n// Тепер спробувати увійти знову\ncy.loginWithSavedCredentials();",
+          "err": {},
+          "uuid": "986a6be4-319a-419f-99df-59a0d70eae57",
+          "parentUUID": "b6c3fd36-36cc-4804-82ee-e00f66bf4178",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "986a6be4-319a-419f-99df-59a0d70eae57"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4884,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-07-23T17:07:02.862Z",
+    "end": "2025-07-23T17:07:06.344Z",
+    "duration": 3482,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c88ae91d-dd72-420f-a90a-9063de6c1584",
+      "title": "",
+      "fullFile": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "file": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7fb03948-b98e-4273-91c6-a1ac2316fdae",
+          "title": "Garage and Fuel Expenses",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add car and fuel expense",
+              "fullTitle": "Garage and Fuel Expenses should add car and fuel expense",
+              "timedOut": null,
+              "duration": 3449,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('button', 'Add car').click();\n_garagePage.garagePage.addCar('Audi', 'TT', '12345');\n//expensesPage.addExpenses('50', '100');",
+              "err": {},
+              "uuid": "b72296ec-e1c8-4a07-900c-8c2e15346a36",
+              "parentUUID": "7fb03948-b98e-4273-91c6-a1ac2316fdae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b72296ec-e1c8-4a07-900c-8c2e15346a36"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3449,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports2",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

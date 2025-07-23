@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-23T16:12:16.338Z",
+    "end": "2025-07-23T16:12:23.400Z",
+    "duration": 7062,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0de8b2d-9901-466d-b5df-be49e5bf0296",
+      "title": "",
+      "fullFile": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "file": "cypress/e2e/lesson20/addCarandExpenses.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7f76168-b229-41ff-b10e-586f35ba6143",
+          "title": "Garage and Fuel Expenses",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add car and fuel expense",
+              "fullTitle": "Garage and Fuel Expenses should add car and fuel expense",
+              "timedOut": null,
+              "duration": 7047,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('button', 'Add car').click();\n_garagePage.garagePage.addCar('Audi', 'TT', '12345');\n//expensesPage.addExpenses('50', '100');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[formcontrolname=\"brandId\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[formcontrolname=\"brandId\"]`, but never found it.\n    at GaragePage.getBrandDropdown (webpack://cyhomework/./cypress/e2e/pages/garagePage.js:4:14)\n    at GaragePage.addCar (webpack://cyhomework/./cypress/e2e/pages/garagePage.js:20:9)\n    at Context.eval (webpack://cyhomework/./cypress/e2e/lesson20/addCarandExpenses.cy.js:21:17)",
+                "diff": null
+              },
+              "uuid": "0a14bba9-bc18-4741-a848-d300f5a5e5ae",
+              "parentUUID": "b7f76168-b229-41ff-b10e-586f35ba6143",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0a14bba9-bc18-4741-a848-d300f5a5e5ae"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7047,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
